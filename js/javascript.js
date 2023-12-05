@@ -90,6 +90,66 @@ $(document).ready(function() {
         }
     });
 
+    $("#maxColSlider").slider({
+        min: -50,
+        max: 50, 
+        step: 1, 
+        value: 0,
+        slide: function(event, ui) {
+            $("#maxCol").val(ui.value);
+        }
+    });
+    
+    $("#maxCol").change(function() {
+        var oldValue = $("#maxColSlider").slider("option", "value");
+        var newValue = $(this).val();
+        if (isNaN(newValue) || newValue < -50 || newValue > 50) {
+            $("#maxColSlider").slider("option", "value", oldValue);
+        } else {
+            $("#maxColSlider").slider("option", "value", parseInt(newValue));
+        }
+    });
+
+    $("#minRowSlider").slider({
+        min: -50,
+        max: 50, 
+        step: 1, 
+        value: 0,
+        slide: function(event, ui) {
+            $("#minCol").val(ui.value);
+        }
+    });
+    
+    $("#minRow").change(function() {
+        var oldValue = $("#minRowSlider").slider("option", "value");
+        var newValue = $(this).val();
+        if (isNaN(newValue) || newValue < -50 || newValue > 50) {
+            $("#minRowSlider").slider("option", "value", oldValue);
+        } else {
+            $("#minRowSlider").slider("option", "value", parseInt(newValue));
+        }
+    });
+
+    $("#maxRowSlider").slider({
+        min: -50,
+        max: 50, 
+        step: 1, 
+        value: 0,
+        slide: function(event, ui) {
+            $("#maxRow").val(ui.value);
+        }
+    });
+    
+    $("#maxRow").change(function() {
+        var oldValue = $("#maxRowSlider").slider("option", "value");
+        var newValue = $(this).val();
+        if (isNaN(newValue) || newValue < -50 || newValue > 50) {
+            $("#maxRowSlider").slider("option", "value", oldValue);
+        } else {
+            $("#maxRowSlider").slider("option", "value", parseInt(newValue));
+        }
+    });
+
     // if the form is valid, gen our table.
     $("#submit").on("click", function() {
         if ($("#dynamicTableForm").valid()) {
