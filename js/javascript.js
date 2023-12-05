@@ -9,6 +9,8 @@
         - https://jqueryvalidation.org/number-method/
         - https://jqueryvalidation.org/min-method/
         - https://jqueryvalidation.org/max-method/
+        - https://api.jqueryui.com/slider/
+        - https://infoheap.com/jquery-ui-slider-and-input-text-box-two-way-binding/
 */
 
 // Input validation handled by JQUERY
@@ -70,6 +72,7 @@ $(document).ready(function() {
 
     });
 
+    // makes the slider, it's the same function for each min/max col/row
     $("#minColSlider").slider({
         min: -50,
         max: 50, 
@@ -79,7 +82,8 @@ $(document).ready(function() {
             $("#minCol").val(ui.value);
         }
     });
-    
+
+    // updates slider when the input box changes, it's the same function for each min/max col/row
     $("#minCol").change(function() {
         var oldValue = $("#minColSlider").slider("option", "value");
         var newValue = $(this).val();
