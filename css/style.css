@@ -37,7 +37,22 @@ form { /* Formatting for form */
     overflow: auto;
 }
 
-#minColSlider, #maxColSlider, #minRowSlider, #maxRowSlider {
+#minColSlider {
+    width: 80%;
+    margin: 15px;
+}
+
+#maxColSlider {
+    width: 80%;
+    margin: 15px;
+}
+
+#minRowSlider {
+    width: 80%;
+    margin: 15px;
+}
+
+#maxRowSlider {
     width: 80%;
     margin: 15px;
 }
