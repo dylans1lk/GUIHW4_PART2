@@ -86,7 +86,7 @@ $(document).ready(function() {
         if (isNaN(newValue) || newValue < -50 || newValue > 50) {
             $("#minColSlider").slider("option", "value", oldValue);
         } else {
-            $("#minColSlider").slider("option", "value", newValue);
+            $("#minColSlider").slider("option", "value", parseInt(newValue));
         }
     });
 
