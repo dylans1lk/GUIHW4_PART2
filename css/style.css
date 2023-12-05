@@ -37,7 +37,7 @@ form { /* Formatting for form */
     overflow: auto;
 }
 
-#minColSlider, maxColSlider, minRowSlider, maxRowSlider {
+#minColSlider, #maxColSlider, #minRowSlider, #maxRowSlider {
     width: 80%;
     margin: 15px;
 }
