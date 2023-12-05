@@ -83,8 +83,8 @@ $(document).ready(function() {
     $("#minCol").change(function() {
         var oldValue = $("#minColSlider").slider("option", "value");
         var newValue = $(this).val();
-        if (isNaN(newValue) || newValue <= -50 || newValue >= 50) {
-            $("#minCol").val(oldValue);
+        if (isNaN(newValue) || newValue < -50 || newValue > 50) {
+            $("#minColSlider").slider("option", "value", oldValue);
         } else {
             $("#minColSlider").slider("option", "value", newValue);
         }
