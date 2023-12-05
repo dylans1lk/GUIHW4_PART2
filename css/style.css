@@ -1,0 +1,48 @@
+/* Dylan Silk - dylan_silk@student.uml.edu - 12/4/23 */
+* { /* Formatting for everything */
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.borderedDiv { /* Box for table ranges */
+    border: 3px solid #000000;
+    padding: 5px;
+    width: 20%;
+    margin: auto;
+    margin-left: 0;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+h1 { /* Formatting for headder */
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: large;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+form { /* Formatting for form */
+    font-family: Arial, Helvetica, sans-serif;
+    color:black; 
+    font-size: large;
+    font-weight: bold;
+}
+
+#dynamicTable { /* Formatting for table */
+    border: 3px solid black;
+    margin-top: 10px;
+    height: 250px;
+    width: 500px;
+    overflow: auto;
+}
+
+#minColSlider {
+    width: 80%;
+    margin: 15px;
+}
+
+.ui-slider-handle {
+    width: 15px;
+    height: 15px;
+}
