@@ -76,15 +76,15 @@ $(document).ready(function() {
         step: 1, 
         value: 0,
         slide: function(event, ui) {
-            $("#minColSliderValue").val(ui.value);
+            $("#minCol").val(ui.value);
         }
     });
     
-    $("#minColSliderValue").change(function() {
+    $("#minCol").change(function() {
         var oldValue = $("#minColSlider").slider("option", "value");
         var newValue = $(this).val();
         if (isNaN(newValue) || newValue <= -50 || newValue >= 50) {
-            $("#minColSliderValue").val(oldValue);
+            $("#minCol").val(oldValue);
         } else {
             $("#minColSlider").slider("option", "value", newValue);
         }
