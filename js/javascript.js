@@ -116,7 +116,7 @@ $(document).ready(function() {
         step: 1, 
         value: 0,
         slide: function(event, ui) {
-            $("#minCol").val(ui.value);
+            $("#minRow").val(ui.value);
         }
     });
     
